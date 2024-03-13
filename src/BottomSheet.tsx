@@ -408,8 +408,6 @@ export const BottomSheet = React.forwardRef<
   })
 
   useEffect(() => {
-    if (!ready) return
-
     if (_open) {
       send('OPEN')
     } else {
