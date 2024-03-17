@@ -186,7 +186,8 @@ function useElementSizeObserver(
 ): number {
   let [size, setSize] = useState(0)
 
-  useDebugValue(`${label}: ${size}`)
+  useDebugValue(`${label}: ${size}`);
+  console.log(`useElementSizeObserver: ${label}: ${size}`)
 
   const handleResize = useCallback(
     (entries: ResizeObserverEntry[]) => {
