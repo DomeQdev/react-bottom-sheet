@@ -33,7 +33,7 @@ export function useFocusTrap({
       onActivate:
         process.env.NODE_ENV !== 'production'
           ? () => {
-              __CONSOLE__REPLACEMENT__?.log('focus activate')
+              undefined?.log('focus activate')
             }
           : undefined,
       // If initialFocusRef is manually specified we don't want the first tabbable element to receive focus if initialFocusRef can't be found

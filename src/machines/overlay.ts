@@ -295,25 +295,25 @@ export const overlayMachine = Machine<
   {
     actions: {
       onOpenCancel: (context, event) => {
-        __CONSOLE__REPLACEMENT__?.log('onOpenCancel', { context, event })
+        undefined?.log('onOpenCancel', { context, event })
       },
       onSnapCancel: (context, event) => {
-        __CONSOLE__REPLACEMENT__?.log('onSnapCancel', { context, event })
+        undefined?.log('onSnapCancel', { context, event })
       },
       onResizeCancel: (context, event) => {
-        __CONSOLE__REPLACEMENT__?.log('onResizeCancel', { context, event })
+        undefined?.log('onResizeCancel', { context, event })
       },
       onCloseCancel: (context, event) => {
-        __CONSOLE__REPLACEMENT__?.log('onCloseCancel', { context, event })
+        undefined?.log('onCloseCancel', { context, event })
       },
       onOpenEnd: (context, event) => {
-        __CONSOLE__REPLACEMENT__?.log('onOpenCancel', { context, event })
+        undefined?.log('onOpenCancel', { context, event })
       },
       onSnapEnd: (context, event) => {
-        __CONSOLE__REPLACEMENT__?.log('onSnapEnd', { context, event })
+        undefined?.log('onSnapEnd', { context, event })
       },
       onResizeEnd: (context, event) => {
-        __CONSOLE__REPLACEMENT__?.log('onResizeEnd', { context, event })
+        undefined?.log('onResizeEnd', { context, event })
       },
     },
     services: {
@@ -342,52 +342,52 @@ export const overlayMachine = Machine<
         await sleep()
       },
       renderVisuallyHidden: async (context, event) => {
-        __CONSOLE__REPLACEMENT__?.group('renderVisuallyHidden')
-        __CONSOLE__REPLACEMENT__?.log({ context, event })
+        undefined?.group('renderVisuallyHidden')
+        undefined?.log({ context, event })
         await sleep()
-        __CONSOLE__REPLACEMENT__?.groupEnd()
+        undefined?.groupEnd()
       },
       activate: async (context, event) => {
-        __CONSOLE__REPLACEMENT__?.group('activate')
-        __CONSOLE__REPLACEMENT__?.log({ context, event })
+        undefined?.group('activate')
+        undefined?.log({ context, event })
         await sleep()
-        __CONSOLE__REPLACEMENT__?.groupEnd()
+        undefined?.groupEnd()
       },
       deactivate: async (context, event) => {
-        __CONSOLE__REPLACEMENT__?.group('deactivate')
-        __CONSOLE__REPLACEMENT__?.log({ context, event })
+        undefined?.group('deactivate')
+        undefined?.log({ context, event })
         await sleep()
-        __CONSOLE__REPLACEMENT__?.groupEnd()
+        undefined?.groupEnd()
       },
       openSmoothly: async (context, event) => {
-        __CONSOLE__REPLACEMENT__?.group('openSmoothly')
-        __CONSOLE__REPLACEMENT__?.log({ context, event })
+        undefined?.group('openSmoothly')
+        undefined?.log({ context, event })
         await sleep()
-        __CONSOLE__REPLACEMENT__?.groupEnd()
+        undefined?.groupEnd()
       },
       openImmediately: async (context, event) => {
-        __CONSOLE__REPLACEMENT__?.group('openImmediately')
-        __CONSOLE__REPLACEMENT__?.log({ context, event })
+        undefined?.group('openImmediately')
+        undefined?.log({ context, event })
         await sleep()
-        __CONSOLE__REPLACEMENT__?.groupEnd()
+        undefined?.groupEnd()
       },
       snapSmoothly: async (context, event) => {
-        __CONSOLE__REPLACEMENT__?.group('snapSmoothly')
-        __CONSOLE__REPLACEMENT__?.log({ context, event })
+        undefined?.group('snapSmoothly')
+        undefined?.log({ context, event })
         await sleep()
-        __CONSOLE__REPLACEMENT__?.groupEnd()
+        undefined?.groupEnd()
       },
       resizeSmoothly: async (context, event) => {
-        __CONSOLE__REPLACEMENT__?.group('resizeSmoothly')
-        __CONSOLE__REPLACEMENT__?.log({ context, event })
+        undefined?.group('resizeSmoothly')
+        undefined?.log({ context, event })
         await sleep()
-        __CONSOLE__REPLACEMENT__?.groupEnd()
+        undefined?.groupEnd()
       },
       closeSmoothly: async (context, event) => {
-        __CONSOLE__REPLACEMENT__?.group('closeSmoothly')
-        __CONSOLE__REPLACEMENT__?.log({ context, event })
+        undefined?.group('closeSmoothly')
+        undefined?.log({ context, event })
         await sleep()
-        __CONSOLE__REPLACEMENT__?.groupEnd()
+        undefined?.groupEnd()
       },
     },
     guards: { initiallyClosed, initiallyOpen },

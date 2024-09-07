@@ -63,7 +63,7 @@ export function useSnapPoints({
       : [0],
     maxHeight
   )
-  //__CONSOLE__REPLACEMENT__?.log({ snapPoints, minSnap, maxSnap })
+  //undefined?.log({ snapPoints, minSnap, maxSnap })
 
   // @TODO investigate the gains from memoizing this
   function findSnap(
@@ -187,7 +187,7 @@ function useElementSizeObserver(
   let [size, setSize] = useState(0)
 
   useDebugValue(`${label}: ${size}`);
-  __CONSOLE__REPLACEMENT__?.log(`useElementSizeObserver: ${label}: ${size}`)
+  undefined?.log(`useElementSizeObserver: ${label}: ${size}`)
 
   const handleResize = useCallback(
     (entries: ResizeObserverEntry[]) => {

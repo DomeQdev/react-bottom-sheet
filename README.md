@@ -306,7 +306,7 @@ function Example() {
     <BottomSheet
       onSpringStart={(event) => {
         if (event.type === 'SNAP' && event.source === 'dragging') {
-          __CONSOLE__REPLACEMENT__?.log('Starting a spring animation to user selected snap point')
+          undefined?.log('Starting a spring animation to user selected snap point')
         }
       }}
     />
@@ -325,7 +325,7 @@ function Example() {
       snapPoints={({ minHeight, maxHeight }) => [minHeight, maxHeight]}
       onSpringEnd={(event) => {
         if (event.type === 'SNAP' && event.source === 'snap-to-bottom') {
-          __CONSOLE__REPLACEMENT__?.log(
+          undefined?.log(
             'Just finished an imperativ transition to the bottom snap point'
           )
         }
@@ -404,13 +404,13 @@ export default function Example() {
     <BottomSheet
       ref={sheetRef}
       onSpringStart={() => {
-        __CONSOLE__REPLACEMENT__?.log('Transition from:', sheetRef.current.height)
+        undefined?.log('Transition from:', sheetRef.current.height)
         requestAnimationFrame(() =>
-          __CONSOLE__REPLACEMENT__?.log('Transition to:', sheetRef.current.height)
+          undefined?.log('Transition to:', sheetRef.current.height)
         )
       }}
       onSpringEnd={() =>
-        __CONSOLE__REPLACEMENT__?.log('Finished transition to:', sheetRef.current.height)
+        undefined?.log('Finished transition to:', sheetRef.current.height)
       }
     />
   )
