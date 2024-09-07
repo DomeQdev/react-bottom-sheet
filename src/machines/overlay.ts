@@ -295,25 +295,25 @@ export const overlayMachine = Machine<
   {
     actions: {
       onOpenCancel: (context, event) => {
-        console.log('onOpenCancel', { context, event })
+        __CONSOLE__REPLACEMENT__?.log('onOpenCancel', { context, event })
       },
       onSnapCancel: (context, event) => {
-        console.log('onSnapCancel', { context, event })
+        __CONSOLE__REPLACEMENT__?.log('onSnapCancel', { context, event })
       },
       onResizeCancel: (context, event) => {
-        console.log('onResizeCancel', { context, event })
+        __CONSOLE__REPLACEMENT__?.log('onResizeCancel', { context, event })
       },
       onCloseCancel: (context, event) => {
-        console.log('onCloseCancel', { context, event })
+        __CONSOLE__REPLACEMENT__?.log('onCloseCancel', { context, event })
       },
       onOpenEnd: (context, event) => {
-        console.log('onOpenCancel', { context, event })
+        __CONSOLE__REPLACEMENT__?.log('onOpenCancel', { context, event })
       },
       onSnapEnd: (context, event) => {
-        console.log('onSnapEnd', { context, event })
+        __CONSOLE__REPLACEMENT__?.log('onSnapEnd', { context, event })
       },
       onResizeEnd: (context, event) => {
-        console.log('onResizeEnd', { context, event })
+        __CONSOLE__REPLACEMENT__?.log('onResizeEnd', { context, event })
       },
     },
     services: {
@@ -342,52 +342,52 @@ export const overlayMachine = Machine<
         await sleep()
       },
       renderVisuallyHidden: async (context, event) => {
-        console.group('renderVisuallyHidden')
-        console.log({ context, event })
+        __CONSOLE__REPLACEMENT__?.group('renderVisuallyHidden')
+        __CONSOLE__REPLACEMENT__?.log({ context, event })
         await sleep()
-        console.groupEnd()
+        __CONSOLE__REPLACEMENT__?.groupEnd()
       },
       activate: async (context, event) => {
-        console.group('activate')
-        console.log({ context, event })
+        __CONSOLE__REPLACEMENT__?.group('activate')
+        __CONSOLE__REPLACEMENT__?.log({ context, event })
         await sleep()
-        console.groupEnd()
+        __CONSOLE__REPLACEMENT__?.groupEnd()
       },
       deactivate: async (context, event) => {
-        console.group('deactivate')
-        console.log({ context, event })
+        __CONSOLE__REPLACEMENT__?.group('deactivate')
+        __CONSOLE__REPLACEMENT__?.log({ context, event })
         await sleep()
-        console.groupEnd()
+        __CONSOLE__REPLACEMENT__?.groupEnd()
       },
       openSmoothly: async (context, event) => {
-        console.group('openSmoothly')
-        console.log({ context, event })
+        __CONSOLE__REPLACEMENT__?.group('openSmoothly')
+        __CONSOLE__REPLACEMENT__?.log({ context, event })
         await sleep()
-        console.groupEnd()
+        __CONSOLE__REPLACEMENT__?.groupEnd()
       },
       openImmediately: async (context, event) => {
-        console.group('openImmediately')
-        console.log({ context, event })
+        __CONSOLE__REPLACEMENT__?.group('openImmediately')
+        __CONSOLE__REPLACEMENT__?.log({ context, event })
         await sleep()
-        console.groupEnd()
+        __CONSOLE__REPLACEMENT__?.groupEnd()
       },
       snapSmoothly: async (context, event) => {
-        console.group('snapSmoothly')
-        console.log({ context, event })
+        __CONSOLE__REPLACEMENT__?.group('snapSmoothly')
+        __CONSOLE__REPLACEMENT__?.log({ context, event })
         await sleep()
-        console.groupEnd()
+        __CONSOLE__REPLACEMENT__?.groupEnd()
       },
       resizeSmoothly: async (context, event) => {
-        console.group('resizeSmoothly')
-        console.log({ context, event })
+        __CONSOLE__REPLACEMENT__?.group('resizeSmoothly')
+        __CONSOLE__REPLACEMENT__?.log({ context, event })
         await sleep()
-        console.groupEnd()
+        __CONSOLE__REPLACEMENT__?.groupEnd()
       },
       closeSmoothly: async (context, event) => {
-        console.group('closeSmoothly')
-        console.log({ context, event })
+        __CONSOLE__REPLACEMENT__?.group('closeSmoothly')
+        __CONSOLE__REPLACEMENT__?.log({ context, event })
         await sleep()
-        console.groupEnd()
+        __CONSOLE__REPLACEMENT__?.groupEnd()
       },
     },
     guards: { initiallyClosed, initiallyOpen },

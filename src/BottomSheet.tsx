@@ -515,7 +515,7 @@ export const BottomSheet = React.forwardRef<
     
     // Cancel the drag operation if the canDrag state changed
     if (!canDragRef.current) {
-      console.log('handleDrag cancelled dragging because canDragRef is false')
+      __CONSOLE__REPLACEMENT__?.log('handleDrag cancelled dragging because canDragRef is false')
       cancel()
       return memo
     }
