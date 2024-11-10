@@ -19,8 +19,6 @@ export function useSpringInterpolations({
     (y, minSnap, maxSnap) => `${Math.round(clamp(y, minSnap, maxSnap))}px`,
   )
 
-  const finalHeight = `${Math.round(spring.maxSnap.get())}px`
-
   const interpolateY = to(
     [spring.y, spring.minSnap, spring.maxSnap],
     (y, minSnap, maxSnap) => {
@@ -69,6 +67,5 @@ export function useSpringInterpolations({
     ['--rsbs-overlay-translate-y' as any]: interpolateY,
     ['--rsbs-overlay-rounded' as any]: interpolateBorderRadius,
     ['--rsbs-overlay-h' as any]: interpolateHeight,
-    ['--fag-height' as any]: finalHeight,
   }
 }
