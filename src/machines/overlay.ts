@@ -294,27 +294,13 @@ export const overlayMachine = Machine<
   },
   {
     actions: {
-      onOpenCancel: (context, event) => {
-        undefined?.log('onOpenCancel', { context, event })
-      },
-      onSnapCancel: (context, event) => {
-        undefined?.log('onSnapCancel', { context, event })
-      },
-      onResizeCancel: (context, event) => {
-        undefined?.log('onResizeCancel', { context, event })
-      },
-      onCloseCancel: (context, event) => {
-        undefined?.log('onCloseCancel', { context, event })
-      },
-      onOpenEnd: (context, event) => {
-        undefined?.log('onOpenCancel', { context, event })
-      },
-      onSnapEnd: (context, event) => {
-        undefined?.log('onSnapEnd', { context, event })
-      },
-      onResizeEnd: (context, event) => {
-        undefined?.log('onResizeEnd', { context, event })
-      },
+      onOpenCancel: (context, event) => {},
+      onSnapCancel: (context, event) => {},
+      onResizeCancel: (context, event) => {},
+      onCloseCancel: (context, event) => {},
+      onOpenEnd: (context, event) => {},
+      onSnapEnd: (context, event) => {},
+      onResizeEnd: (context, event) => {},
     },
     services: {
       onSnapStart: async () => {
@@ -342,54 +328,30 @@ export const overlayMachine = Machine<
         await sleep()
       },
       renderVisuallyHidden: async (context, event) => {
-        undefined?.group('renderVisuallyHidden')
-        undefined?.log({ context, event })
         await sleep()
-        undefined?.groupEnd()
       },
       activate: async (context, event) => {
-        undefined?.group('activate')
-        undefined?.log({ context, event })
         await sleep()
-        undefined?.groupEnd()
       },
       deactivate: async (context, event) => {
-        undefined?.group('deactivate')
-        undefined?.log({ context, event })
         await sleep()
-        undefined?.groupEnd()
       },
       openSmoothly: async (context, event) => {
-        undefined?.group('openSmoothly')
-        undefined?.log({ context, event })
         await sleep()
-        undefined?.groupEnd()
       },
       openImmediately: async (context, event) => {
-        undefined?.group('openImmediately')
-        undefined?.log({ context, event })
         await sleep()
-        undefined?.groupEnd()
       },
       snapSmoothly: async (context, event) => {
-        undefined?.group('snapSmoothly')
-        undefined?.log({ context, event })
         await sleep()
-        undefined?.groupEnd()
       },
       resizeSmoothly: async (context, event) => {
-        undefined?.group('resizeSmoothly')
-        undefined?.log({ context, event })
         await sleep()
-        undefined?.groupEnd()
       },
       closeSmoothly: async (context, event) => {
-        undefined?.group('closeSmoothly')
-        undefined?.log({ context, event })
         await sleep()
-        undefined?.groupEnd()
       },
     },
     guards: { initiallyClosed, initiallyOpen },
-  }
+  },
 )

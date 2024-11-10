@@ -63,7 +63,7 @@ export function useSnapPoints({
       : [0],
     maxHeight
   )
-  //undefined?.log({ snapPoints, minSnap, maxSnap })
+  //
 
   // @TODO investigate the gains from memoizing this
   function findSnap(
@@ -187,7 +187,7 @@ function useElementSizeObserver(
   let [size, setSize] = useState(0)
 
   useDebugValue(`${label}: ${size}`);
-  undefined?.log(`useElementSizeObserver: ${label}: ${size}`)
+//   
 
   const handleResize = useCallback(
     (entries: ResizeObserverEntry[]) => {
