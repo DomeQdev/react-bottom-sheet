@@ -19,9 +19,7 @@ export function useSpringInterpolations({
     (y, minSnap, maxSnap) => `${Math.round(clamp(y, minSnap, maxSnap))}px`,
   )
 
-  const finalHeight = `${Math.round(
-    clamp(spring.y.get(), spring.minSnap.get(), spring.maxSnap.get()),
-  )}px`
+  const finalHeight = `${Math.round(spring.maxSnap.get())}px`
 
   const interpolateY = to(
     [spring.y, spring.minSnap, spring.maxSnap],
