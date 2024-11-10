@@ -19,6 +19,10 @@ export function useSpringInterpolations({
     (y, minSnap, maxSnap) => `${Math.round(clamp(y, minSnap, maxSnap))}px`,
   )
 
+  const finalHeight = `${Math.round(
+    clamp(spring.y.get(), spring.minSnap.get(), spring.maxSnap.get()),
+  )}px`
+
   const interpolateY = to(
     [spring.y, spring.minSnap, spring.maxSnap],
     (y, minSnap, maxSnap) => {
@@ -59,10 +63,6 @@ export function useSpringInterpolations({
   const interpolateBackdrop = to([spring.y, spring.minSnap], (y, minSnap) =>
     minSnap ? clamp(y / minSnap, 0, 1) : 0,
   )
-
-  const finalHeight = `${Math.round(
-    clamp(spring.y.get(), spring.minSnap as any, spring.maxSnap as any),
-  )}px`
 
   return {
     ['--rsbs-content-opacity' as any]: interpolateContentOpacity,
